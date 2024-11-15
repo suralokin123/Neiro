@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Продукция Neiro</title>
+</head>
+<body>
+    <header>
+        <div class="header__wrapper container">
+            <div class="nerabota">
+                <img src="./img/Nerabota.jpg" alt="">
+            </div>
+            <div class="nav">
+                <a href="#">Главная</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main__wrapper container">
+            <img class="me" src="./img/i (1).webp" alt="">
+            <h1>Обо мне</h1>
+            <p>Меня зовут Николай мне 25 лет. В 2020 году познакомился с Неработой, меня туда пригласил мой куратор Балтийский, настоящее имя Андрей Шепель. Я обучился там много чему и также имею возможность перепродавать курсы, которые там продаются. Это хорошая возможность, учитывая, что компания имеет матричный маркетинг, а это значит что заработать может каждый человек.</p>
+            <p>Сейчас там создаётся новый продукт Neiro. Уже открыт предзаказ данного продукта, вы можете приобрести его уже заранее, таким образом вы уже оплатите продукт и плюс ещё заработаете первые деньги. Ведь в матричных компаниях на предстартах всегда есть возможность урвать определённый кусок дохода на первых уровнях.</p>
+            <div class="video-container">
+                <iframe
+                    src="https://www.youtube.com/embed/rP-zkcWcLng"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            
+        </div>
+        <div class="carousel">
+            <div class="carousel-slides">
+                <div class="slide" onclick="openModal(this)">
+                    <img src="./img/photo_2024-11-09_12-24-45.jpg" alt="">
+                </div>
+                <div class="slide" onclick="openModal(this)">
+                    <img src="./img/photo_2024-11-09_12-24-45 (2).jpg" alt="">
+                </div>
+                <div class="slide" onclick="openModal(this)">
+                    <img src="./img/photo_2024-11-09_12-24-45 (3).jpg" alt="">
+                </div>
+                <div class="slide" onclick="openModal(this)">
+                    <img src="./img/photo_2024-11-09_12-24-45 (4).jpg" alt="">
+                </div>
+                <div class="slide" onclick="openModal(this)">
+                    <img src="./img/photo_2024-11-09_12-24-45 (5).jpg" alt="">
+                </div>
+                <div class="slide" onclick="openModal(this)">
+                    <img src="./img/photo_2024-11-09_12-24-45 (6).jpg" alt="">
+                </div>
+                <div class="slide" onclick="openModal(this)">
+                    <img src="./img/photo_2024-11-09_12-24-45 (7).jpg" alt="">
+                </div>
+                <div class="slide" onclick="openModal(this)">
+                    <img src="./img/photo_2024-11-09_12-24-45 (8).jpg" alt="">
+                </div>
+                <div class="slide" onclick="openModal(this)">
+                    <img src="./img/photo_2024-11-09_12-24-46.jpg" alt="">
+                </div>
+                <div class="slide" onclick="openModal(this)">
+                    <img src="./img/photo_2024-11-09_12-24-46 (2).jpg" alt="">
+                </div>
+            </div>
+            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        </div>
+           <!-- Модальное окно -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption"></div>
+    </div>
+        <div class="buy">
+            <a href="https://njtc.pro/reg/Suralokin">Сделать предзаказ</a>
+        </div>
+    
+    </main>
+    <script src="slider.js/slider.js"></script>
+</body>
+</html>

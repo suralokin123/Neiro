@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  
+  body {
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+  }
+  
+  img {
+    max-width: 100%;
+    display: block;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.me {
+    width:200px;
+}
+
+.nerabota {
+    width:200px;
+}
+
+.neiro {
+    display: flex;
+    justify-content: center;
+}
+
+.main__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap:20px;
+    padding:20px;
+}
+
+.video-container {
+    width:350px; /* Ширина плеера */
+    height:200px; /* Высота плеера */
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+iframe {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.carousel {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.carousel-slides {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 300px;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #006aff;
+    text-align: center;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.prev {
+    left:0px;
+}
+
+.next {
+    right: 10px;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 999; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9); 
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.buy {
+    display: flex;
+    justify-content: center;
+    padding:40px 0;
+}
