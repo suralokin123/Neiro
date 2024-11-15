@@ -7,6 +7,7 @@
   
   body {
     scroll-behavior: smooth;
+    background-color: #ffe600;
     text-rendering: optimizeSpeed;
   }
   
@@ -32,6 +33,7 @@ body {
 
 .me {
     width:200px;
+    border-radius:10px;
 }
 
 .nerabota {
@@ -68,7 +70,7 @@ iframe {
 
 .carousel {
     position: relative;
-    width: 300px;
+    width:300px;
     overflow: hidden;
     margin: auto;
 }
@@ -87,22 +89,38 @@ iframe {
 }
 
 .prev, .next {
-    position: absolute;
-    top: 50%;
+    position:relative;
+    top:20px;
+    left:120px;
     transform: translateY(-50%);
-    background-color: rgba(255, 0, 0, 0.5);
-    color: white;
+    background-color: rgba(255, 255, 255, 0.7); /* Полупрозрачный фон */
     border: none;
-    cursor: pointer;
     padding: 10px;
+    cursor: pointer;
+    font-size: 24px; /* Размер стрелок */
+    border-radius:20px;
+    width:50px;
+    z-index:10; /* Поверх слайдов */
 }
 
 .prev {
-    left:0px;
+    left:50px; /* Отступ слева */
 }
 
-.next {
-    right: 10px;
+.btn {
+    display: flex;
+    justify-content: center;
+    height:100px;
+    width:200px;
+    padding:20px;
+}
+
+.btn-btn {
+    width:200px;
+    background-color: #00ddff;
+    border:none;
+    color: #ffb700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .modal {
@@ -121,6 +139,8 @@ iframe {
 .modal-content {
     margin: auto;
     display: block;
+    position: relative;
+    top:10px;
     max-width: 80%;
     max-height: 80%;
 }
@@ -140,4 +160,11 @@ iframe {
     display: flex;
     justify-content: center;
     padding:40px 0;
+}
+
+@media (min-width:375px) and (max-width:1200px) {
+    .modal-content {
+        position: relative;
+        top:200px;
+    }
 }
