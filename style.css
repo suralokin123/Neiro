@@ -218,15 +218,21 @@ iframe {
         width:300px;
         flex-direction: row;
         position: relative;
-        left:30px;
+        left:5px;
     }
     
     .modal-content {
         width: 80%;
+        position: relative;
+        top:80px;
         height: auto; /* Авто высота */
     }
 
     .video-container {
         width:300px;
+    }
+
+    .btn__wrapper {
+        margin-bottom:20px;
     }
 }

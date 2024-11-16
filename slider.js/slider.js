@@ -48,3 +48,4 @@ function handleWheel(event) {
         moveSlide(1);
     }
 }
+
