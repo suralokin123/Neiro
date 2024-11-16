@@ -1,26 +1,27 @@
 let currentSlide = 0;
 
 function showSlide(index) {
-    const slides = document.querySelector('.carousel-slides');
-    const totalSlides = document.querySelectorAll('.slide').length;
-
-    if (index >= totalSlides) {
+    const slides = document.querySelectorAll('.small-slide');
+    if (index >= slides.length) {
         currentSlide = 0;
     } else if (index < 0) {
-        currentSlide = totalSlides - 1;
-    } else {
-        currentSlide = index;
+        currentSlide = slides.length - 1;
     }
-
-    slides.style.transform = `translateX(${-currentSlide * 300}px)`;
+    
+    const offset = -currentSlide * 100;
+    document.querySelector('.small-carousel-slides').style.transform = `translateX(${offset}%)`;
 }
 
 function moveSlide(direction) {
-    showSlide(currentSlide + direction);
+    currentSlide += direction;
+    showSlide(currentSlide);
 }
 
-// Показывать первый слайд при загрузке
-showSlide(currentSlide);
+// При загрузке страницы показать первый слайд
+document.addEventListener("DOMContentLoaded", function() {
+    showSlide(currentSlide);
+});
+
 
 // Открытие модального окна
 function openModal(slide) {
@@ -36,4 +37,14 @@ function openModal(slide) {
 function closeModal() {
     const modal = document.getElementById('modal');
     modal.style.display = "none";
+}
+
+// Добавляем обработчик прокрутки
+function handleWheel(event) {
+    event.preventDefault(); // Запараллеливаем стандартное поведение скролла
+    if (event.deltaY < 0) {
+        moveSlide(-1);
+    } else {
+        moveSlide(1);
+    }
 }

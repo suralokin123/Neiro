@@ -54,49 +54,39 @@
       
             
         </div>
-        <div class="carousel">
-            <div class="carousel-slides">
-                <div class="slide" onclick="openModal(this)">
+        <div class="small-carousel" onwheel="handleWheel(event)">
+            <div class="small-carousel-slides">
+                <div class="small-slide" onclick="openModal(this)">
                     <img src="./img/photo_2024-11-09_12-24-45.jpg" alt="">
                 </div>
-                <div class="slide" onclick="openModal(this)">
+                <div class="small-slide" onclick="openModal(this)">
                     <img src="./img/photo_2024-11-09_12-24-45 (2).jpg" alt="">
                 </div>
-                <div class="slide" onclick="openModal(this)">
+                <div class="small-slide" onclick="openModal(this)">
                     <img src="./img/photo_2024-11-09_12-24-45 (3).jpg" alt="">
                 </div>
-                <div class="slide" onclick="openModal(this)">
+                <div class="small-slide" onclick="openModal(this)">
                     <img src="./img/photo_2024-11-09_12-24-45 (4).jpg" alt="">
                 </div>
-                <div class="slide" onclick="openModal(this)">
-                    <img src="./img/photo_2024-11-09_12-24-45 (5).jpg" alt="">
-                </div>
-                <div class="slide" onclick="openModal(this)">
-                    <img src="./img/photo_2024-11-09_12-24-45 (6).jpg" alt="">
-                </div>
-                <div class="slide" onclick="openModal(this)">
-                    <img src="./img/photo_2024-11-09_12-24-45 (7).jpg" alt="">
-                </div>
-                <div class="slide" onclick="openModal(this)">
-                    <img src="./img/photo_2024-11-09_12-24-45 (8).jpg" alt="">
-                </div>
-                <div class="slide" onclick="openModal(this)">
-                    <img src="./img/photo_2024-11-09_12-24-46.jpg" alt="">
-                </div>
-                <div class="slide" onclick="openModal(this)">
-                    <img src="./img/photo_2024-11-09_12-24-46 (2).jpg" alt="">
-                </div>
             </div>
-            <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
-            <button class="next" onclick="moveSlide(1)">&#10095;</button>
+            <button class="small-prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="small-next" onclick="moveSlide(1)">&#10095;</button>
         </div>
+        
+        
+        
     <div id="modal" class="modal" onclick="closeModal()">
         <span class="close">&times;</span>
         <img class="modal-content" id="modalImg">
         <div id="caption"></div>
     </div>
-    <div class="btn container">
-        <button class="btn-btn"><a href="https://njtc.pro/reg/Suralokin">Сделать предзаказ</a></button>
+    <div class="btn__wrapper container">
+        <button class="btn btn__preorder">
+            <a href="https://njtc.pro/reg/Suralokin">Сделать предзаказ</a>
+        </button>
+        <button class="btn btn__learn-more">
+            <a href="https://t.me/MlM2022_bot?start=ref_Suralokin">Узнать более подробнее</a>
+        </button>
     </div>
     </main>
     <script src="slider.js/slider.js"></script>
