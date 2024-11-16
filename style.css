@@ -212,9 +212,31 @@ iframe {
     padding:40px 0;
 }
 
-@media (min-width:375px) and (max-width:1200px) {
+/* Мобильная версия */
+@media (max-width: 600px) {
+    .small-slide img {
+        width: 100%;
+        height: auto; /* Обеспечиваем пропорциональность изображений */
+    }
+}
+
+/* Таблеты и более широкие экраны */
+@media (min-width: 370px) and (max-width: 1200px) {
+    .small-carousel {
+        width:300px;
+        flex-direction: row;
+    }
+    
     .modal-content {
-        position: relative;
-        top:200px;
+        width: 80%;
+        height: auto; /* Авто высота */
+    }
+}
+
+/* Десктоп */
+@media (min-width: 1201px) {
+    .modal-content {
+        width: 50%;
+        height: auto; 
     }
 }
