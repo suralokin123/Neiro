@@ -48,6 +48,7 @@ body {
 .main__wrapper {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     gap:20px;
     padding:20px;
@@ -211,6 +212,57 @@ iframe {
     justify-content: center;
     padding:40px 0;
 }
+
+.text-block {
+    margin: 20px;
+    font-size: 16px;
+}
+
+/* Стилизация смены языка */
+
+.language {
+    width:200px;
+}
+
+.language {
+    background-color: #007bff; /* Цвет фона кнопки */
+    color: white; /* Цвет текста */
+    padding: 10px 20px; /* Внутренние отступы */
+    border: none; /* Убираем рамку */
+    border-radius: 5px; /* Закругляем углы */
+    cursor: pointer; /* Указатель на кнопке */
+    display: flex; /* Размещаем элементы в строку */
+    align-items: center; /* Выравниваем по центру */
+}
+
+.language:hover {
+    background-color: #0056b3; /* Цвет фона при наведении */
+}
+
+.flag-icon {
+    width: 20px; /* Ширина флага */
+    height: 15px; /* Высота флага */
+    margin-right: 5px; /* Отступ между флагами и текстом */
+    display: none; /* Изначально скрываем флаги */
+}
+
+/* Стили для показа флага России */
+#ru-flag {
+    background-image: url('./img/russiaflag_6419.png'); /* Путь к изображению флага России */
+    background-size: cover; /* Подгоняем изображение по размеру */
+}
+
+/* Стили для показа флага Англии */
+#uk-flag {
+    background-image: url('./img/flagofunitedkingdom_6362.png'); /* Путь к изображению флага Англии */
+    background-size: cover; /* Подгоняем изображение по размеру */
+}
+
+/* Пример скрытия одного из флагов по умолчанию */
+#uk-flag {
+    display: block; /* Показать флаг Англии по умолчанию */
+}
+
 
 /* Таблеты и более широкие экраны */
 @media (min-width: 300px) and (max-width: 1200px) {
